@@ -1,0 +1,70 @@
+
+<h1>Listing My Objects</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class = "danger" colspan = "2" >Red</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_objects.each do |my_object| %>
+    <% value = my_object[:color].casecmp "red" %> 
+      <%if value == 0 %>
+      <tr>
+        <td><%= my_object[:id] %></td>
+        <!-- <td><%= link_to 'Show', my_object %></td> -->
+        <td><%= link_to 'Edit', edit_my_object_path(my_object) %></td><!-- 
+        <td><%= link_to 'Destroy', my_object, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+<table class="table">
+  <thead>
+    <tr>
+      <th class = "success" colspan = "2">Green</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_objects.each do |my_object| %>
+    <% value = my_object[:color].casecmp "green" %> 
+      <%if value == 0 %>
+      <tr>
+        <td><%= my_object[:id] %></td>
+        <!-- <td><%= link_to 'Show', my_object %></td> -->
+        <td><%= link_to 'Edit', edit_my_object_path(my_object) %></td><!-- 
+        <td><%= link_to 'Destroy', my_object, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+<table class="table">
+  <thead>
+    <tr>
+      <th class = "info" colspan = "2">Blue</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_objects.each do |my_object| %>
+    <% value = my_object[:color].casecmp "blue" %> 
+      <%if value == 0 %>
+      <tr>
+        <td><%= my_object[:id] %></td>
+       <!--  <td><%= link_to 'Show', my_object %></td> -->
+        <td><%= link_to 'Edit', edit_my_object_path(my_object) %></td><!-- 
+        <td><%= link_to 'Destroy', my_object, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My object', new_my_object_path %>
