@@ -3,7 +3,7 @@
 
 <%= form_tag my_object_path, :method => :put do %>
 
-   <!-- Color : <%=select_tag "color", '<option value ="red">red</option><option value ="green">green</option><option value="blue">blue</option>'.html_safe %><br/> -->
-   <%=text_field_tag :color, @my_object[:color]%>
+    Color group(only red, green or blue): <%=select_tag "color", '<option value ="red">red</option><option value ="green">green</option><option value="blue">blue</option>'.html_safe %><br/> 
+   <!--Color group(only red, green or blue):<%=text_field_tag :color, @my_object[:color]%>-->
    </br><%=submit_tag "update"%>
 <%end%>
