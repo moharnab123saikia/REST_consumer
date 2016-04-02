@@ -15,7 +15,7 @@
       <tr>
         <td><%= my_object[:id] %></td>
         <!-- <td><%= link_to 'Show', my_object %></td> -->
-        <td><%= link_to 'Edit', edit_my_object_path(my_object) %></td><!-- 
+        <td><%= link_to 'Edit', edit_my_object_path(my_object[:id]) %></td><!-- 
         <td><%= link_to 'Destroy', my_object, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
       <% end %>
@@ -36,7 +36,7 @@
       <tr>
         <td><%= my_object[:id] %></td>
         <!-- <td><%= link_to 'Show', my_object %></td> -->
-        <td><%= link_to 'Edit', edit_my_object_path(my_object) %></td><!-- 
+        <td><%= link_to 'Edit', edit_my_object_path(my_object[:id]) %></td><!-- 
         <td><%= link_to 'Destroy', my_object, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
       <% end %>
@@ -57,7 +57,7 @@
       <tr>
         <td><%= my_object[:id] %></td>
        <!--  <td><%= link_to 'Show', my_object %></td> -->
-        <td><%= link_to 'Edit', edit_my_object_path(my_object) %></td><!-- 
+        <td><%= link_to 'Edit', edit_my_object_path(my_object[:id]) %></td><!-- 
         <td><%= link_to 'Destroy', my_object, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
       <% end %>
