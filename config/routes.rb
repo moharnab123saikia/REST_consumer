@@ -56,4 +56,6 @@ Rails.application.routes.draw do
   ApiConsumer::Application.routes.draw do
     resources :my_objects
   end
+  root 'my_objects#index'
+
 end
